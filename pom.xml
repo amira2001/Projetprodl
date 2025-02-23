@@ -16,8 +16,6 @@
     <properties>
         <java.version>11</java.version>
         <jacoco.version>0.8.7</jacoco.version>
-        <sonar.host.url>https://sonarqube.cedricmtta.com</sonar.host.url>
-        <sonar.projectName>My Survey</sonar.projectName>
         <sonar.coverage.jacoco.xmlReportPaths>${project.build.directory}/site/jacoco/jacoco.xml</sonar.coverage.jacoco.xmlReportPaths>
         <sonar.java.coveragePlugin>jacoco</sonar.java.coveragePlugin>
         <sonar.language>java</sonar.language>
@@ -26,7 +24,6 @@
         <sonar.tests>src/test/java</sonar.tests>
         <sonar.java.binaries>target/classes</sonar.java.binaries>
         <sonar.organization>benabbasamira</sonar.organization>
-        <sonar.projectKey>amira2001_Projetprodl</sonar.projectKey>
         <sonar.host.url>https://sonarcloud.io</sonar.host.url>
     </properties>
     <dependencies>
