@@ -88,6 +88,9 @@ jobs:
           key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
           restore-keys: ${{ runner.os }}-maven
 
+      - name: Build with maven
+        run: mvn clean install
+
       - name: Run SonarCloud analysis
         run: |
           mvn sonar:sonar -Dsonar.projectKey=amira2001_Projetprodl `
