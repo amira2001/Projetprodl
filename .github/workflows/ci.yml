@@ -88,5 +88,5 @@ jobs:
       - name: Build and analyze
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-        run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=amira2001_Projetprodl
+        run: mvn -B verify sonar:sonar -Dsonar.projectKey=amira2001_Projetprodl -Dsonar.organization=benabbasamira -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=${{ secrets.SONAR_TOKEN }}
 
