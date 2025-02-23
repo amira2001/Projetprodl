@@ -89,10 +89,9 @@ jobs:
           restore-keys: ${{ runner.os }}-maven
 
       - name: Run SonarCloud analysis
-        run: |
-          mvn sonar:sonar `
-            -Dsonar.projectKey=benabbasamira `
-            -Dsonar.organization=BENABBASAmira `
-            -Dsonar.host.url=https://sonarcloud.io `
-            -Dsonar.login=${{ secrets.TOKEN_PROJ_PROD_LOG }}
-        shell: pwsh
+          run: |
+            mvn sonar:sonar -Dsonar.projectKey=benabbasamira `
+                            -Dsonar.organization=BENABBASAmira `
+                            -Dsonar.host.url="https://sonarcloud.io" `
+                            -Dsonar.login="${{ secrets.TOKEN_PROJ_PROD_LOG }}"
+          shell: bash
