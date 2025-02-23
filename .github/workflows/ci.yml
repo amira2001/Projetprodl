@@ -96,6 +96,6 @@ jobs:
           mvn sonar:sonar -Dsonar.projectKey=amira2001_Projetprodl `
                 -Dsonar.organization=benabbasamira `
                 -Dsonar.host.url="https://sonarcloud.io" `
-                -Dsonar.login="${{ secrets.TOKEN_PROJ_PROD_LOG }}"
+                -Dsonar.login="${{ secrets.SONAR_TOKEN }}"
         shell: bash
 
