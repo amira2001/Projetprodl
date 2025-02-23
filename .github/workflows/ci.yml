@@ -90,8 +90,8 @@ jobs:
 
       - name: Run SonarCloud analysis
         run: |
-          mvn sonar:sonar -Dsonar.projectKey=benabbasamira `
-                -Dsonar.organization=BENABBASAmira `
+          mvn sonar:sonar -Dsonar.projectKey=amira2001_Projetprodl `
+                -Dsonar.organization=benabbasamira `
                 -Dsonar.host.url="https://sonarcloud.io" `
                 -Dsonar.login="${{ secrets.TOKEN_PROJ_PROD_LOG }}"
         shell: bash
