@@ -21,6 +21,7 @@ public class CommentaireController {
 
     @PutMapping(value = "/{id}")
     @ResponseStatus(HttpStatus.OK)
+    @ResponseBody
     public CommentaireDto update(@PathVariable("id") Long id, @RequestBody CommentaireDto commentaireDto) {
         var model = mapper.map(commentaireDto, Commentaire.class);
         var result = service.update(id, model);
